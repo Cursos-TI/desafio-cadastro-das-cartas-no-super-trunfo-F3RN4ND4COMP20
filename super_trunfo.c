@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-    char Estado1[10], Estado2[10];
+    char Estado1, Estado2[10];
     char Codigocarta1[10], Codigocarta2[10];
     char Nomecidade1[20], Nomecidade2[20];
     int Populacao1, Populacao2;
@@ -11,7 +11,7 @@ int main(){
 
     printf("Carta 1\n");
     printf("Digite o Estado: ");
-    scanf("%s", &Estado1);
+    scanf("%c", &Estado1);
 
     printf("Digite o Codigo da carta: ");
     scanf("%s", Codigocarta1);
@@ -32,7 +32,7 @@ int main(){
     scanf("%d", &Pontosturisticos1);
 
     printf("Carta 1\n");
-    printf("Estado: %s\n", Estado1);
+    printf("Estado: %c\n", Estado1);
     printf("Codigo da carta: %s\n", Codigocarta1);
     printf("Nome da cidade: %s\n", Nomecidade1);
     printf("Populacao: %d\n", Populacao1);
@@ -42,7 +42,7 @@ int main(){
 
     printf("Carta 2\n");
     printf("Digite o Estado: ");
-    scanf("%s",  &Estado2);
+    scanf("%s", Estado2);
 
     printf("Digite o Codigo da carta: ");
     scanf("%s", Codigocarta2);
