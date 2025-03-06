@@ -51,8 +51,8 @@ int main(){
     scanf("%f", &Superpoder1);
 
     Densidadepopulacional1=(float)(Populacao1/Areacidade1);
-    PIBpercapita1=(float)(PIB1/Populacao1);
-    Superpoder1=(float)(Populacao1+Areacidade1+PIB1+Pontosturisticos1+PIBpercapita1+1/Densidadepopulacional1);
+    PIBpercapita1=(float)(PIB1 * 1000000000)/Populacao1;
+    Superpoder1=(float)(Populacao1+Areacidade1+(PIB1 * 1000000000)+Pontosturisticos1+PIBpercapita1+1/Densidadepopulacional1);
 
     printf("Carta 1\n");
     printf("Estado: %c\n", Estado1);
@@ -60,11 +60,11 @@ int main(){
     printf("Nome da cidade: %s\n", Nomecidade1);
     printf("Populacao: %lu\n", Populacao1);
     printf("Area da cidade: %.3f\n", Areacidade1);
-    printf("PIB: %.2f\n", PIB1);
+    printf("PIB: %f\n", PIB1);
     printf("Pontos turisticos: %d\n", Pontosturisticos1);
-    printf("Densidade populacional: %f\n", Densidadepopulacional1);
-    printf("PIB per capita: %f\n", PIBpercapita1);
-    printf("Super poder: %f\n", Superpoder1);
+    printf("Densidade populacional: %.2f\n", Densidadepopulacional1);
+    printf("PIB per capita: %.3f\n", PIBpercapita1);
+    printf("Super poder: %.3f\n", Superpoder1);
 
     printf("Carta 2\n");
     printf("Digite o Estado: ");
@@ -98,8 +98,8 @@ int main(){
     scanf("%f", &Superpoder2);
 
     Densidadepopulacional2=(float)(Populacao2/Areacidade2);
-    PIBpercapita2=(float)(PIB2/Populacao2);
-    Superpoder2=(float)(Populacao2+Areacidade2+PIB2+Pontosturisticos2+PIBpercapita2+1/Densidadepopulacional2);
+    PIBpercapita2=(float)(PIB2 * 1000000000)/Populacao2;
+    Superpoder2=(float)(Populacao2+Areacidade2+(PIB2 * 1000000000)+Pontosturisticos2+PIBpercapita2+1/Densidadepopulacional2);
 
     printf("Carta 2\n");
     printf("Estado: %s\n", Estado2);
@@ -107,11 +107,11 @@ int main(){
     printf("Nome da cidade: %s\n", Nomecidade2);
     printf("Populacao: %lu\n", Populacao2);
     printf("Area da cidade: %.3f\n", Areacidade2);
-    printf("PIB: %.2f\n", PIB2);
+    printf("PIB: %f\n", PIB2);
     printf("Pontos turisticos: %d\n", Pontosturisticos2);
-    printf("Densidade populacional: %f\n", Densidadepopulacional2);
-    printf("PIB per capita: %f\n", PIBpercapita2);
-    printf("Super poder: %f\n", Superpoder2);
+    printf("Densidade populacional: %.2f\n", Densidadepopulacional2);
+    printf("PIB per capita: %.2f\n", PIBpercapita2);
+    printf("Super poder: %.2f\n", Superpoder2);
 
     // Comparacao das cartas
 
@@ -123,24 +123,21 @@ int main(){
     Resultado6=Densidadepopulacional1<Densidadepopulacional2;
     Resultado7=Superpoder1>Superpoder2;
 
-    printf("A Carta 1 vence");
-    printf("A Carta 2 vence");
-    printf("A Carta 1 vence");
-    printf("A Carta 2 vence");
-    printf("A Carta 1 vence");
-    printf("A Carta 2 vence");
-    printf("A Carta 1 vence");
-    printf("A Carta 2 vence");
-    printf("A Carta 1 vence");
-    printf("A Carta 2 vence");
-    printf("A Carta 1 vence");
-    printf("A Carta 2 vence");
-    printf("A Carta 1 vence");
-    printf("A Carta 2 vence");
+    printf("Carta 1: %lu vs. Carta 2: %lu -> Carta %d venceu!\n\n", Populacao1, Populacao2, (Populacao1>Populacao2)? 1:2);
+    printf("Carta 1: %f vs. Carta 2: %f -> Carta %d venceu!\n\n", Areacidade1, Areacidade2, (Areacidade1>Areacidade2)? 1:2);
+    printf("Carta 1: %f vs. Carta 2: %f -> Carta %d venceu!\n\n", PIB1, PIB2, (PIB1>PIB2)? 1:2);
+    printf("Carta 1: %d vs. Carta 2: %d -> Carta %d venceu!\n\n", Pontosturisticos1, Pontosturisticos2, (Pontosturisticos1>
+                                                                                                         Pontosturisticos2)? 1:2);
+    printf("Carta 1: %f vs. Carta 2: %f -> Carta %d venceu!\n\n", PIBpercapita1, PIBpercapita2, (PIBpercapita1>PIBpercapita2)? 1:2);
+    printf("Carta 1: %f vs. Carta 2: %f -> Carta %d venceu!\n\n",Densidadepopulacional1,Densidadepopulacional2, (Densidadepopulacional1<
+                                                                                                        Densidadepopulacional2)? 1:2);
+    printf("Carta 1: %f vs. Carta 2: %f -> Carta %d venceu!\n\n", Superpoder1, Superpoder2, (Superpoder1>Superpoder2)? 1:2);
 
     return 0;
 
 }
+    
+
     
 
     
