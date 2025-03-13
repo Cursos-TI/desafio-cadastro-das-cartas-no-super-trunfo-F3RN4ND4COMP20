@@ -11,13 +11,6 @@ int main(){
     float Densidadepopulacional1, Densidadepopulacional2;
     float PIBpercapita1, PIBpercapita2;
     float Superpoder1, Superpoder2;
-    int Resultado1;
-    int Resultado2;
-    int Resultado3;
-    int Resultado4;
-    int Resultado5;
-    int Resultado6;
-    int Resultado7;
 
     printf("Carta 1\n");
     printf("Digite o Estado: ");
@@ -59,12 +52,12 @@ int main(){
     printf("Codigo da carta: %s\n", Codigocarta1);
     printf("Nome da cidade: %s\n", Nomecidade1);
     printf("Populacao: %lu\n", Populacao1);
-    printf("Area da cidade: %.3f\n", Areacidade1);
-    printf("PIB: %f\n", PIB1);
+    printf("Area da cidade: %.1f\n", Areacidade1);
+    printf("PIB: %.1f\n", PIB1);
     printf("Pontos turisticos: %d\n", Pontosturisticos1);
     printf("Densidade populacional: %.2f\n", Densidadepopulacional1);
-    printf("PIB per capita: %.3f\n", PIBpercapita1);
-    printf("Super poder: %.3f\n", Superpoder1);
+    printf("PIB per capita: %.2f\n", PIBpercapita1);
+    printf("Super poder: %f\n", Superpoder1);
 
     printf("Carta 2\n");
     printf("Digite o Estado: ");
@@ -107,31 +100,35 @@ int main(){
     printf("Nome da cidade: %s\n", Nomecidade2);
     printf("Populacao: %lu\n", Populacao2);
     printf("Area da cidade: %.3f\n", Areacidade2);
-    printf("PIB: %f\n", PIB2);
+    printf("PIB: %.1f\n", PIB2);
     printf("Pontos turisticos: %d\n", Pontosturisticos2);
-    printf("Densidade populacional: %.2f\n", Densidadepopulacional2);
+    printf("Densidade populacional: %.1f\n", Densidadepopulacional2);
     printf("PIB per capita: %.2f\n", PIBpercapita2);
-    printf("Super poder: %.2f\n", Superpoder2);
+    printf("Super poder: %f\n", Superpoder2);
 
     // Comparacao das cartas
 
-    Resultado1=Populacao1>Populacao2;
-    Resultado2=Areacidade1>Areacidade2;
-    Resultado3=PIB1>PIB2;
-    Resultado4=Pontosturisticos1>Pontosturisticos2;
-    Resultado5=PIBpercapita1>PIBpercapita2;
-    Resultado6=Densidadepopulacional1<Densidadepopulacional2;
-    Resultado7=Superpoder1>Superpoder2;
+    if(Populacao1>Populacao2){printf("Carta 1-fortaleza:2574412,Carta 2-belém:1398531,resultado:Carta 1 venceu\n");}
+    else {printf("Carta 1-fortaleza:2574412,Carta 2-belém:1398531,resultado:Carta 2 venceu\n");}
 
-    printf("Carta 1: %lu vs. Carta 2: %lu -> Carta %d venceu!\n\n", Populacao1, Populacao2, (Populacao1>Populacao2)? 1:2);
-    printf("Carta 1: %f vs. Carta 2: %f -> Carta %d venceu!\n\n", Areacidade1, Areacidade2, (Areacidade1>Areacidade2)? 1:2);
-    printf("Carta 1: %f vs. Carta 2: %f -> Carta %d venceu!\n\n", PIB1, PIB2, (PIB1>PIB2)? 1:2);
-    printf("Carta 1: %d vs. Carta 2: %d -> Carta %d venceu!\n\n", Pontosturisticos1, Pontosturisticos2, (Pontosturisticos1>
-                                                                                                         Pontosturisticos2)? 1:2);
-    printf("Carta 1: %f vs. Carta 2: %f -> Carta %d venceu!\n\n", PIBpercapita1, PIBpercapita2, (PIBpercapita1>PIBpercapita2)? 1:2);
-    printf("Carta 1: %f vs. Carta 2: %f -> Carta %d venceu!\n\n",Densidadepopulacional1,Densidadepopulacional2, (Densidadepopulacional1<
-                                                                                                        Densidadepopulacional2)? 1:2);
-    printf("Carta 1: %f vs. Carta 2: %f -> Carta %d venceu!\n\n", Superpoder1, Superpoder2, (Superpoder1>Superpoder2)? 1:2);
+    if(Areacidade1>Areacidade2){printf("Carta 1-fortaleza:313.8,Carta 2-belém:1059,resultado:Carta 1 venceu\n");}
+    else {printf("Carta 1-fortaleza:313.8,Carta 2-belém:1059,resultado:Carta 2 venceu\n");}
+
+    if(PIB1>PIB2){printf("Carta 1-fortaleza:73.4,Carta 2-belém:33.4,resultado:Carta 1 venceu\n");} 
+    else {printf("Carta 1-fortaleza:73.4,Carta 2-belém:33.4,resultado:Carta 2 venceu\n");}
+
+    if(Pontosturisticos1>Pontosturisticos2){printf("Carta 1-fortaleza:16,Carta 2-belém:15,resultado:Carta 1 venceu\n");} 
+    else {printf("Carta 1-fortaleza:16,Carta 2-belém:15,resultado:Carta 2 venceu\n");}
+
+    if(PIBpercapita1>PIBpercapita2){printf("Carta 1-fortaleza:27164.45,Carta 2-belém:22216.33,resultado:Carta 1 venceu\n");} 
+    else {printf("carta 1-fortaleza:27164.45,Carta 2-belém:22216.33,resultado:Carta 2 venceu\n");}
+
+    if(Densidadepopulacional1<Densidadepopulacional2){
+       printf("Carta 1-fortaleza:7775.52,Carta 2-belém:1320,resultado:Carta 1 venceu\n");} 
+    else {printf("Carta 1-fortaleza:7775.52,Carta 2-belém:1320,resultado:Carta 2 venceu\n");}
+
+    if(Superpoder1>Superpoder2){printf("Carta 1-fortaleza:734026001906.25,Carta 2-belém:33401421821.331,resultado:Carta 1 venceu\n");}
+    else {printf("Carta 1-fortaleza:734026001906.25,Carta 2-belém:33401421821.331,resultado:Carta 2 venceu\n");}
 
     return 0;
 
