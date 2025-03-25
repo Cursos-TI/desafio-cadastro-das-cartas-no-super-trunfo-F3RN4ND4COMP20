@@ -14,6 +14,7 @@ int main(){
    int Escolha1, Escolha2;
    int Primeiroatributo1,Primeiroatributo2,Segundoatributo1,Segundoatributo2;
    int Resultado1, Resultado2;
+   int Somacarta1, Somacarta2;
 
    printf("Carta 1\n");
    printf("Digite o Estado: ");
@@ -132,6 +133,14 @@ int main(){
    printf("Carta 1-Cidade: %s-Populacao: %lu\n",Nomecidade1,Populacao1);
    printf("Carta 2-Cidade: %s-Populacao: %lu\n",Nomecidade2,Populacao2);
    Resultado1=Primeiroatributo1>Primeiroatributo2 ? 1:0;
+   if(Resultado1==1)
+   {
+    printf("Carta 1 venceu!\n");
+   }else if(Resultado1==0){
+    printf("Carta 2 venceu!\n");
+   }else{
+    printf("Empate!\n");
+   }
    break;
    case 2:
    Primeiroatributo1=Areacidade1;
@@ -140,6 +149,14 @@ int main(){
    printf("Carta 1-Cidade: %s-Area da cidade: %.1f\n",Nomecidade1,Areacidade1);
    printf("Carta 2-Cidade: %s-Area da cidade: %.3f\n",Nomecidade2,Areacidade2); 
    Resultado1=Primeiroatributo1>Primeiroatributo2 ? 1:0;
+   if(Resultado1==1)
+   {
+    printf("Carta 1 venceu!\n");
+   }else if(Resultado1==0){
+    printf("Carta 2 venceu!\n");
+   }else{
+    printf("Empate!\n");
+   }
    break;
    case 3:
    Primeiroatributo1=PIB1;
@@ -148,6 +165,14 @@ int main(){
    printf("Carta 1-Cidade: %s-PIB: %.1f\n",Nomecidade1,PIB1);
    printf("Carta 2-Cidade: %s-PIB: %.1f\n",Nomecidade2,PIB2); 
    Resultado1=Primeiroatributo1>Primeiroatributo2 ? 1:0;
+   if(Resultado1==1)
+   {
+    printf("Carta 1 venceu!\n");
+   }else if(Resultado1==0){
+    printf("Carta 2 venceu!\n");
+   }else{
+    printf("Empate!\n");
+   }
    break;
    case 4:
    Primeiroatributo1=Pontosturisticos1;
@@ -156,6 +181,14 @@ int main(){
    printf("Carta 1-Cidade: %s-Pontos turisticos: %d\n",Nomecidade1,Pontosturisticos1);
    printf("Carta 2-Cidade: %s-Pontos turisticos: %d\n",Nomecidade2,Pontosturisticos2);
    Resultado1=Primeiroatributo1>Primeiroatributo2 ? 1:0;
+   if(Resultado1==1)
+   {
+    printf("Carta 1 venceu!\n");
+   }else if(Resultado1==0){
+    printf("Carta 2 venceu!\n");
+   }else{
+    printf("Empate!\n");
+   }
    break;
    case 5:
    Primeiroatributo1=Densidadepopulacional1;
@@ -164,6 +197,14 @@ int main(){
    printf("Carta 1-Cidade: %s-Densidade populacional: %.2f\n",Nomecidade1,Densidadepopulacional1);
    printf("Carta 2-Cidade: %s-Densidade populacional: %.1f\n",Nomecidade2,Densidadepopulacional2);
    Resultado1=Primeiroatributo1<Primeiroatributo2 ? 1:0;
+   if(Resultado1==1)
+   {
+    printf("Carta 1 venceu!\n");
+   }else if(Resultado1==0){
+    printf("Carta 2 venceu!\n");
+   }else{
+    printf("Empate!\n");
+   }
    break;
    case 6:
    Primeiroatributo1=PIBpercapita1;
@@ -172,6 +213,14 @@ int main(){
    printf("Carta 1-Cidade: %s-PIB per capita: %.2f\n",Nomecidade1,PIBpercapita1);
    printf("Carta 2-Cidade: %s-PIB per capita: %.2f\n",Nomecidade2,PIBpercapita2);
    Resultado1=Primeiroatributo1>Primeiroatributo2 ? 1:0;
+   if(Resultado1==1)
+   {
+    printf("Carta 1 venceu!\n");
+   }else if(Resultado1==0){
+    printf("Carta 2 venceu!\n");
+   }else{
+    printf("Empate!\n");
+   }
    break;
    case 7:
    Primeiroatributo1=Superpoder1;
@@ -180,6 +229,14 @@ int main(){
    printf("Carta 1-Cidade: %s-Super poder: %f\n",Nomecidade1,Superpoder1);
    printf("Carta 2-Cidade: %s-Super poder: %f\n",Nomecidade2,Superpoder2);
    Resultado1=Primeiroatributo1>Primeiroatributo2 ? 1:0;
+   if(Resultado1==1)
+   {
+    printf("Carta 1 venceu!\n");
+   }else if(Resultado1==0){
+    printf("Carta 2 venceu!\n");
+   }else{
+    printf("Empate!\n");
+   }
    break;
    default:
    printf("Opcao de jogo invalida!\n");
@@ -206,6 +263,15 @@ int main(){
    printf("Carta 1-Cidade: %s-Populacao: %lu\n",Nomecidade1,Populacao1);
    printf("Carta 2-Cidade: %s-Populacao: %lu\n",Nomecidade2,Populacao2);
    Resultado2=Segundoatributo1>Segundoatributo2 ? 1:0;
+   if(Resultado2==1)
+   {
+    printf("carta 1 venceu!\n");
+   }else if(Resultado2==0)
+   {
+    printf("Carta 2 venceu!\n");
+   }else{
+    printf("Empate!\n");
+   }
    break;
    case 2:
    Segundoatributo1=Areacidade1;
@@ -214,6 +280,15 @@ int main(){
    printf("Carta 1-Cidade: %s-Area da cidade: %.1f\n",Nomecidade1,Areacidade1);
    printf("Carta 2-Cidade: %s-Area da cidade: %.3f\n",Nomecidade2,Areacidade2); 
    Resultado2=Segundoatributo1>Segundoatributo2 ? 1:0;
+   if(Resultado2==1)
+   {
+    printf("carta 1 venceu!\n");
+   }else if(Resultado2==0)
+   {
+    printf("Carta 2 venceu!\n");
+   }else{
+    printf("Empate!\n");
+   }
    break;
    case 3:
    Segundoatributo1=PIB1;
@@ -222,6 +297,15 @@ int main(){
    printf("Carta 1-Cidade: %s-PIB: %.1f\n",Nomecidade1,PIB1);
    printf("Carta 2-Cidade: %s-PIB: %.1f\n",Nomecidade2,PIB2); 
    Resultado2=Segundoatributo1>Segundoatributo2 ? 1:0;
+   if(Resultado2==1)
+   {
+    printf("carta 1 venceu!\n");
+   }else if(Resultado2==0)
+   {
+    printf("Carta 2 venceu!\n");
+   }else{
+    printf("Empate!\n");
+   }
    break;
    case 4:
    Segundoatributo1=Pontosturisticos1;
@@ -230,6 +314,15 @@ int main(){
    printf("Carta 1-Cidade: %s-Pontos turisticos: %d\n",Nomecidade1,Pontosturisticos1);
    printf("Carta 2-Cidade: %s-Pontos turisticos: %d\n",Nomecidade2,Pontosturisticos2);
    Resultado2=Segundoatributo1>Segundoatributo2 ? 1:0;
+   if(Resultado2==1)
+   {
+    printf("carta 1 venceu!\n");
+   }else if(Resultado2==0)
+   {
+    printf("Carta 2 venceu!\n");
+   }else{
+    printf("Empate!\n");
+   }
    break;
    case 5:
    Segundoatributo1=Densidadepopulacional1;
@@ -238,6 +331,15 @@ int main(){
    printf("Carta 1-Cidade: %s-Densidade populacional: %.2f\n",Nomecidade1,Densidadepopulacional1);
    printf("Carta 2-Cidade: %s-Densidade populacional: %.1f\n",Nomecidade2,Densidadepopulacional2);
    Resultado2=Segundoatributo1<Segundoatributo2 ? 1:0;
+   if(Resultado2==1)
+   {
+    printf("carta 1 venceu!\n");
+   }else if(Resultado2==0)
+   {
+    printf("Carta 2 venceu!\n");
+   }else{
+    printf("Empate!\n");
+   }
    break;
    case 6:
    Segundoatributo1=PIBpercapita1;
@@ -246,6 +348,15 @@ int main(){
    printf("Carta 1-Cidade: %s-PIB per capita: %.2f\n",Nomecidade1,PIBpercapita1);
    printf("Carta 2-Cidade: %s-PIB per capita: %.2f\n",Nomecidade2,PIBpercapita2);
    Resultado2=Segundoatributo1>Segundoatributo2 ? 1:0;
+   if(Resultado2==1)
+   {
+    printf("carta 1 venceu!\n");
+   }else if(Resultado2==0)
+   {
+    printf("Carta 2 venceu!\n");
+   }else{
+    printf("Empate!\n");
+   }
    break;
    case 7:
    Segundoatributo1=Superpoder1;
@@ -254,6 +365,15 @@ int main(){
    printf("Carta 1-Cidade: %s-Super poder: %f\n",Nomecidade1,Superpoder1);
    printf("Carta 2-Cidade: %s-Super poder: %f\n",Nomecidade2,Superpoder2);
    Resultado2=Segundoatributo1>Segundoatributo2 ? 1:0;
+   if(Resultado2==1)
+   {
+    printf("carta 1 venceu!\n");
+   }else if(Resultado2==0)
+   {
+    printf("Carta 2 venceu!\n");
+   }else{
+    printf("Empate!\n");
+   }
    break;
    default:
    printf("Opcao de jogo invalida!\n");
@@ -261,7 +381,38 @@ int main(){
 
    }
 
-   return 0;
+   //Comparacao para caso de vitoria nos 2 atributos
+   if((Resultado1==1)&&(Resultado2==1))
+   {
+    printf("Carta 1 venceu nos 2 atributos!\n");
+   }else if((Resultado1==0)&&(Resultado2==0))
+   {
+    printf("Carta 2 venceu nos 2 atributos!\n");
+   }else{
+    printf("Empate!\n");
+
+   }
+
+   //Soma dos pontos dos atributos
+   Somacarta1=Primeiroatributo1 + Segundoatributo1;
+   Somacarta2=Primeiroatributo2 + Segundoatributo2;
+   printf("### Rodada Bonus ###\n");
+   //Comparacao das somas de atributos
+   printf("O valor da soma de atributos da Carta 1 é: %.2f\n",Somacarta1);
+   printf("O valor da soma de atributos da Carta 2 é: %.2f\n",Somacarta2);
+
+   if(Somacarta1==Somacarta2)
+   {
+    printf("Empate,tente novamente!\n");
+   }else if(Somacarta1>Somacarta2)
+   {
+    printf("Pontos: %.2f-Carta 1 venceu!\n",Somacarta1);
+   }else{
+    printf("Pontos: %.2f-Carta 2 venceu!\n",Somacarta2);
+
+   }
+   
+    return 0;
 
    }
     
