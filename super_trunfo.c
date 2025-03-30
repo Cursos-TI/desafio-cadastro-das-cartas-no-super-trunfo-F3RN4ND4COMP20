@@ -14,7 +14,7 @@ int main(){
    int Escolha1, Escolha2;
    int Primeiroatributo1,Primeiroatributo2,Segundoatributo1,Segundoatributo2;
    int Resultado1, Resultado2;
-   int Somacarta1, Somacarta2;
+   float Somacarta1, Somacarta2;
 
    printf("Carta 1\n");
    printf("Digite o Estado: ");
